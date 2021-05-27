@@ -157,8 +157,3 @@ class Unet3D():
         original = self.make_images(image, ct_shape, mask_patches)
 
         return original
-
-
-unet = Unet3D()
-model = unet.load_model()
-full = unet.predict('coronacases_003.nii.gz')
